@@ -11,11 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="collisionDetect.h" />
-    <ClInclude Include="move_control.h" />
+    <ClCompile Include="src\point_cloud_test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="point_cloud_test.cpp" />
+    <ClInclude Include="src\collisionDetect.h" />
+    <ClInclude Include="src\move_control.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F2BA827E-7BA1-415C-9921-04D25321DA6C}</ProjectGuid>
