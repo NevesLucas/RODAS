@@ -1,0 +1,129 @@
+﻿'PCL_test.exe' (Win32): Loaded 'C:\Users\Lucas\documents\visual studio 2013\Projects\PCL_test\Debug\PCL_test.exe'. Symbols loaded.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_common_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_filters_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_io_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_visualization_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\advapi32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp120d.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcr120d.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcomp120d.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_sample_consensus_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_search_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_kdtree_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_octree_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\bin\pcl_io_ply_debug.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonDataModel-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonCore-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonExecutionModel-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkImagingCore-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkIOGeometry-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkIOCore-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkIOLegacy-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkIOImage-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkIOPLY-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wsock32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ws2_32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkChartsCore-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonColor-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonMath-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonTransforms-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkFiltersExtraction-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkFiltersCore-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkFiltersGeneral-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingContext2D-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingCore-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkFiltersSources-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingFreeType-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkImagingSources-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkFiltersModeling-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkInteractionStyle-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkInteractionWidgets-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingAnnotation-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingContextOpenGL-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingOpenGL-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingFreeTypeOpenGL-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingLOD-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingVolumeOpenGL-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkViewsContext2D-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\opengl32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcrt.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sechost.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rpcrt4.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\user32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonMisc-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonSystem-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtksys-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkzlib-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkjsoncpp-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkjpeg-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkpng-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtktiff-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkmetaio-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkDICOMParser-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\nsi.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkInfovisCore-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkFiltersStatistics-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkCommonComputationalGeometry-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkFiltersGeometry-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkfreetype-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkftgl-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkFiltersHybrid-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkImagingGeneral-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkImagingHybrid-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkRenderingVolume-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkImagingColor-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkViewsCore-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\glu32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ddraw.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sspicli.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shell32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\psapi.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkImagingFourier-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\PCL 1.7.2\3rdParty\VTK\bin\vtkalglib-6.2-gd.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dciman32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptbase.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\combase.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shlwapi.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcryptprimitives.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imm32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msctf.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\mswsock.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\uxtheme.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\Common Files\Microsoft Shared\Ink\tiptsf.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleaut32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dwmapi.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ole32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel.appcore.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleacc.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\atiglpxx.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\atioglxx.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\version.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\setupapi.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cfgmgr32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmm.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmmbase.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\devobj.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\atiadlxy.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\propsys.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\userenv.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wtsapi32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\IPHLPAPI.DLL'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\profapi.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winnsi.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wintrust.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\crypt32.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msasn1.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\atigktxx.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\SHCore.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\atigktxx.dll'
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\atigktxx.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Windows\SysWOW64\clbcatq.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\ASUS\AI Suite II\Remote GO!\AssistTools\WiFiGO_HookKey.dll'. Cannot find or open the PDB file.
+'PCL_test.exe' (Win32): Loaded 'C:\Program Files (x86)\ASUS\AI Suite II\TurboV EVO\HookKey32.dll'. Cannot find or open the PDB file.
+The thread 0x25bc has exited with code 0 (0x0).
+The thread 0x9a0 has exited with code 0 (0x0).
+The program '[1500] PCL_test.exe' has exited with code -1073741510 (0xc000013a).
