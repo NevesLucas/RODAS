@@ -42,6 +42,8 @@ typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 static pcl::visualization::CloudViewer viewer ("Simple Cloud Viewer");
 //static pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ);
 
+//testing 1 2 3
+
 collisionDetect avoidance;
 
 /// need this //// void callback(const PointCloud::ConstPtr & msg)
