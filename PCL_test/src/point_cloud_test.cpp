@@ -30,7 +30,7 @@ Rev 4.0
 //additional classes/files
 
 ros::Publisher cmd_vel_pub_;
-int nums; //this is a test of github
+int numscolors; //this is a test of github
 static bool stop =false;
 //////////////
 using namespace std;
