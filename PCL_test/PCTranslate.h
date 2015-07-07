@@ -7,7 +7,7 @@
 using namespace std;
 void translate(float x, float y, float z, float angz, pcl::PointCloud<pcl::PointXYZ>::Ptr source_cloud, pcl::PointCloud<pcl::PointXYZ>::Ptr  transformed_cloud)
 {
-	float theta = angz; // TODO: convert angz to radians
+	float theta = angz; // TODO: convert angz to radians if needed
 
 	Eigen::Affine3f transform_2 = Eigen::Affine3f::Identity();
 
