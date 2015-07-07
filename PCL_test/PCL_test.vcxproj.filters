@@ -26,5 +26,8 @@
     <ClInclude Include="src\move_control.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PCTranslate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

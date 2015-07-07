@@ -14,6 +14,7 @@
     <ClCompile Include="src\point_cloud_test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PCTranslate.h" />
     <ClInclude Include="src\collisionDetect.h" />
     <ClInclude Include="src\move_control.h" />
   </ItemGroup>

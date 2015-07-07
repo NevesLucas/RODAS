@@ -30,7 +30,7 @@ Rev 4.0
 //additional classes/files
 
 ros::Publisher cmd_vel_pub_;
-int nums; 
+
 static bool stop =false;
 //////////////
 using namespace std;
