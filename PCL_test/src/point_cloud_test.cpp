@@ -30,7 +30,7 @@ Rev 4.0
 //additional classes/files
 
 ros::Publisher cmd_vel_pub_;
-int nums; //this is a test of github whaaaattttt
+int nums; 
 static bool stop =false;
 //////////////
 using namespace std;
@@ -41,8 +41,6 @@ typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 ///////boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer (new pcl::visualization::PCLVisualizer("New Viewer"));
 static pcl::visualization::CloudViewer viewer ("Simple Cloud Viewer");
 //static pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ);
-
-//testing 1 2 3
 
 collisionDetect avoidance;
 
@@ -56,6 +54,16 @@ pcl::copyPointCloud(*msg,*input);
 	viewer.showCloud(input);
 
   avoidance.run(input, cmd_vel_pub_);
+
+  ros::Subscriber odom_sub = nh.subscribe<nav_msgs::Odometry>("/odom", 1, OdomCallback);
+
+  void OdomCallback(const geometry::Twist::ConstPtr &msg) //or void OdomCallback(nav_msgs::Odometry msg)
+  {
+	  px = initialX + msg.pose.pose.position.x;
+	  py = initialY + msg.pose.pose.position.y;
+	  ptheta = angles::normalize_angle_positive(asin(msg.pose.pose.orientation.z) * 2); //not sure why this is the way it is...
+	  //do something
+  }
 
   if(viewer.wasStopped())
   {
@@ -74,8 +82,7 @@ int main(int argc, char **argv)
   ros::NodeHandle nh;
   
 
-  ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("odom", 50);
-  tf::TransformBroadcaster odom_broadcaster;
+  //ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("odom", 50);
   cmd_vel_pub_ = nh.advertise<geometry_msgs::Twist>("cmd_vel_mux/input/teleop", 1);
  
 
