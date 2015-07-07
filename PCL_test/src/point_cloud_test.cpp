@@ -59,11 +59,15 @@ pcl::copyPointCloud(*msg,*input);
 
   void OdomCallback(const geometry::Twist::ConstPtr &msg) //or void OdomCallback(nav_msgs::Odometry msg)
   {
-	  px = initialX + msg.pose.pose.position.x;
-	  py = initialY + msg.pose.pose.position.y;
+	  px = msg.pose.pose.position.x; //were originally added by initial values
+	  py = msg.pose.pose.position.y;
 	  ptheta = angles::normalize_angle_positive(asin(msg.pose.pose.orientation.z) * 2); //not sure why this is the way it is...
 	  //do something
   }
+
+  //initial stitch
+
+  //register the points clouds
 
   if(viewer.wasStopped())
   {
