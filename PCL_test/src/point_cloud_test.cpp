@@ -55,15 +55,7 @@ pcl::copyPointCloud(*msg,*input);
 
   avoidance.run(input, cmd_vel_pub_);
 
-  ros::Subscriber odom_sub = nh.subscribe<nav_msgs::Odometry>("/odom", 1, OdomCallback);
 
-  void OdomCallback(const geometry::Twist::ConstPtr &msg) //or void OdomCallback(nav_msgs::Odometry msg)
-  {
-	  px = msg.pose.pose.position.x; //were originally added by initial values
-	  py = msg.pose.pose.position.y;
-	  ptheta = angles::normalize_angle_positive(asin(msg.pose.pose.orientation.z) * 2); //not sure why this is the way it is...
-	  //do something
-  }
 
   //initial stitch
 
@@ -74,6 +66,14 @@ pcl::copyPointCloud(*msg,*input);
   }
    
  
+}
+
+void OdomCallback(const nav_msgs::Odometry::ConstPtr &OdomMsg) 
+{
+	px = OdomMsg->pose.pose.position.x; //were originally added by initial values
+	py = OdomMsg->pose.pose.position.y;
+	ptheta = angles::normalize_angle_positive(asin(msg.pose.pose.orientation.z) * 2); //check soon
+	//do something
 }
 
 
@@ -91,6 +91,9 @@ int main(int argc, char **argv)
  
 
   ros::Subscriber sub = nh.subscribe<PointCloud>("/voxel_grid/output",1,callback);
+  ros::Subscriber odom_sub = nh.subscribe<nav_msgs::Odometry>("/odom", 1, OdomCallback);
+
+ 
 
   
   ros::Rate loop_rate(60); //60 HZ
