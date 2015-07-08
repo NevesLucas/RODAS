@@ -36,6 +36,9 @@ static bool stop =false;
 using namespace std;
 using namespace cv;
 
+float currHead = 0;
+float currPos[3], currOri[2];
+
 typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 
 ///////boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer (new pcl::visualization::PCLVisualizer("New Viewer"));
@@ -55,9 +58,7 @@ pcl::copyPointCloud(*msg,*input);
 
   avoidance.run(input, cmd_vel_pub_);
 
-
-
-  //initial stitch
+  //initial stitch - You can now use currPos, currOri, and currHead here
 
   //register the points clouds
 
@@ -70,10 +71,13 @@ pcl::copyPointCloud(*msg,*input);
 
 void OdomCallback(const nav_msgs::Odometry::ConstPtr &OdomMsg) 
 {
-	px = OdomMsg->pose.pose.position.x; //were originally added by initial values
-	py = OdomMsg->pose.pose.position.y;
-	ptheta = angles::normalize_angle_positive(asin(msg.pose.pose.orientation.z) * 2); //check soon
-	//do something
+	currPos[0] = OdomMsg->pose.pose.position.x; 
+	currPos[1] = OdomMsg->pose.pose.position.y;
+	currPos[2] = OdomMsg->pose.pose.position.z;
+	currOri[0] = OdomMsg->pose.pose.orientation.z;
+	currOri[1] = OdomMsg->pose.pose.orientation.w;
+
+	currHead = 2*asin(currOri[0]/sqrt(currOri[0]*currOri[0]+currOri[1]*currOri[1])); 
 }
 
 
