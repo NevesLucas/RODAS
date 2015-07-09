@@ -25,7 +25,10 @@ Rev 4.0
 #include <iostream>
 #include <pcl/io/pcd_io.h>
 #include <sensor_msgs/PointCloud2.h>
+
 #include "collisionDetect.h"
+#include "PCTranslate.h"
+#include "PairAlignReg.h"
 
 //additional classes/files
 
@@ -38,6 +41,7 @@ using namespace cv;
 
 float currHead = 0;
 float currPos[3], currOri[2];
+static bool targetmsg = false;
 
 typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 
@@ -58,9 +62,35 @@ pcl::copyPointCloud(*msg,*input);
 
   avoidance.run(input, cmd_vel_pub_);
 
-  //initial stitch - You can now use currPos, currOri, and currHead here
+  pcl::PointCloud<pcl::PointXYZRGB>::Ptr reoriented(new pcl::PointCloud<pcl::PointXYZRGB>);
 
-  //register the points clouds
+  translate(currPos[1], currPos[2], currPos[0], -currOri[0], input, reoriented);
+  cout << currPos[0] << "  " << currPos[1] << "  " << currPos[2] << "  " << currOri[0] * 180 << endl;
+
+
+  if (targetmsg == true)
+  {
+	  pcl::PointCloud<pcl::PointXYZRGB>::Ptr target(new pcl::PointCloud<pcl::PointXYZRGB>);
+	  pcl::copyPointCloud(*PCmap, *target);
+	  pcl::PointCloud<pcl::PointXYZRGB>::Ptr temp(new pcl::PointCloud<pcl::PointXYZRGB>);
+
+	  mapping(reoriented, target, PCmap);
+	  /*
+	  pcl::VoxelGrid<PointT> grid;
+
+	  grid.setLeafSize (0.05, 0.05, 0.05);
+	  grid.setInputCloud (temp);
+	  grid.filter (*PCmap);
+	  */
+	  viewer.showCloud(PCmap);
+
+  }
+  else
+  {
+	  PCmap = reoriented;
+	  //wait for next cloud
+	  targetmsg = true;
+  }
 
   if(viewer.wasStopped())
   {
@@ -77,7 +107,7 @@ void OdomCallback(const nav_msgs::Odometry::ConstPtr &OdomMsg)
 	currOri[0] = OdomMsg->pose.pose.orientation.z;
 	currOri[1] = OdomMsg->pose.pose.orientation.w;
 
-	currHead = 2*asin(currOri[0]/sqrt(currOri[0]*currOri[0]+currOri[1]*currOri[1])); 
+	currHead = 2*asin(currOri[0]/sqrt(currOri[0]*currOri[0]+currOri[1]*currOri[1])); //speed
 }
 
 

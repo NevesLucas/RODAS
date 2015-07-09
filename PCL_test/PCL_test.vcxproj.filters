@@ -29,5 +29,8 @@
     <ClInclude Include="PCTranslate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PairAlignReg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

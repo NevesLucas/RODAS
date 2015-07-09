@@ -2,12 +2,12 @@
 #include <pcl/point_cloud.h>
 #include <pcl/common/transforms.h>
 #include <pcl/visualization/pcl_visualizer.h>
-
+#define PI 3.141592653589793
 
 using namespace std;
 void translate(float x, float y, float z, float angz, pcl::PointCloud<pcl::PointXYZ>::Ptr source_cloud, pcl::PointCloud<pcl::PointXYZ>::Ptr  transformed_cloud)
 {
-	float theta = angz; // TODO: convert angz to radians if needed
+	float theta = angz*PI; // TODO: convert angz to radians if needed
 
 	Eigen::Affine3f transform_2 = Eigen::Affine3f::Identity();
 
