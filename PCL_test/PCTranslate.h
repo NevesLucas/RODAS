@@ -5,7 +5,7 @@
 
 
 using namespace std;
-void translate(float x, float y, float z, float angz, pcl::PointCloud<pcl::PointXYZ>::Ptr source_cloud, pcl::PointCloud<pcl::PointXYZ>::Ptr  transformed_cloud)
+void translatePC(float x, float y, float z, float angz, pcl::PointCloud<pcl::PointXYZ>::Ptr source_cloud, pcl::PointCloud<pcl::PointXYZ>::Ptr  transformed_cloud)
 {
 	float theta = angz; // TODO: convert angz to radians if needed
 

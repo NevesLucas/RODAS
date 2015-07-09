@@ -26,7 +26,7 @@ Rev 4.0
 #include <pcl/io/pcd_io.h>
 #include <sensor_msgs/PointCloud2.h>
 #include "collisionDetect.h"
-
+#include "PCTranslate.h"
 //additional classes/files
 
 ros::Publisher cmd_vel_pub_;
@@ -36,8 +36,8 @@ static bool stop =false;
 using namespace std;
 using namespace cv;
 
-float currHead = 0;
-float currPos[3], currOri[2];
+static float currHead = 0;
+static float currPos[3], currOri[2];
 
 typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 
@@ -54,12 +54,13 @@ void callback (const PointCloud::ConstPtr & msg)
 
 pcl::copyPointCloud(*msg,*input);
 
-	viewer.showCloud(input);
-
+	
   avoidance.run(input, cmd_vel_pub_);
-
+  pcl::PointCloud<pcl::PointXYZ>::Ptr output(new pcl::PointCloud<pcl::PointXYZ>);
+  viewer.showCloud(output);
+  
   //initial stitch - You can now use currPos, currOri, and currHead here
-
+  translatePC(currPos[2], currPos[1], currPos[0],currOri[0]);
   //register the points clouds
 
   if(viewer.wasStopped())
