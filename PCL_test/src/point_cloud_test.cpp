@@ -29,8 +29,33 @@ Rev 4.0
 #include "collisionDetect.h"
 #include "PCTranslate.h"
 #include "PairAlignReg.h"
+#include "TrainedEncoder.h"
+#include "Plotting.h"
 
 //additional classes/files
+
+////////////////////////CAFFE SETUP////////////////////////////////////////////
+string direc = "/home/neuromorphicslab/catkin_ws/src/point_cloud_test/include/Trained_Networks/";
+string netFile = direc + "caffenet_train_iter_3500.caffemodel";
+string protoTxt = direc + "train_val.prototxt";
+const char* labelFile = "/home/neuromorphicslab/catkin_ws/src/point_cloud_test/include/Trained_Networks/emily_labels.txt";
+vector<float> featureResponses;
+int topLabelID = 0;
+string topLabelName = "junk";
+//network create
+TrainedEncoder tnet(netFile, protoTxt, labelFile);
+vector<pair<float, int> > topK; //topK responses and indices
+
+////further setup
+bool stoppedSpin = false;
+bool seenBall = false;
+bool seenCone = false;
+bool seenChair = false;
+ofstream myfile;
+int lastSeen = 0;
+
+//----------------------------------------------------------
+
 
 ros::Publisher cmd_vel_pub_;
 
@@ -111,6 +136,78 @@ void OdomCallback(const nav_msgs::Odometry::ConstPtr &OdomMsg)
 }
 
 
+//////////////////////////////////Caffe Cont///////////////////////////////////////////
+void ImageCallback(const sensor_msgs::ImageConstPtr& msg)
+{
+	try
+	{
+		//grab image
+		cv::Mat grabbedImg = cv_bridge::toCvShare(msg, "bgr8")->image;
+
+		//classify
+		tNet.forwardImg(grabbedImg);
+		classifyAndPlotCaffe(grabbedImg, tNet, 2, topK, myfile, "barLocal.dat");
+		topLabelID = tNet.getTopClass(topLabelName);
+
+		string class0("ball");
+		string class1("cone");
+		string class2("chair");
+
+		if (topLabelNAme.compare(class0) == 0)
+		{
+			if (stoppedSpin == true)
+			{
+				seenBall = false;
+				seenCone = false;
+				seenChair = false;
+			}
+			else if (lastSeen != 0)
+			{
+				seenBall = true;
+				lastSeen = 0;
+			}
+		}
+
+		if (topLabelName.compare(class1) == 0)
+		{
+			if (stoppedSpin == true)
+			{
+				seenBall = false;
+				seenCone = false;
+				seenChair = false;
+			}
+			else if (lastSeen != 1)
+			{
+				seenCone = true;
+				lastSeen = 1;
+			}
+		}
+
+		if (topLabelName.compare(class2) == 0)
+		{
+			if (stoppedSpin == true)
+			{
+				seenBall = false;
+				seenCone = false;
+				seenChair = false;
+			}
+			else if (lastSeen != 2)
+			{
+				seenChair = true;
+				lastSeen = 2;
+			}
+		}
+
+		///TODO: figure out the stoppedSpin stuff -------------------------------
+	}
+	catch (cv_bridge::Exception& e)
+	{
+		//Ros_Error("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
+	}
+}
+
+
+
 int main(int argc, char **argv) 
 {
 
@@ -126,7 +223,7 @@ int main(int argc, char **argv)
 
   ros::Subscriber sub = nh.subscribe<PointCloud>("/voxel_grid/output",1,callback);
   ros::Subscriber odom_sub = nh.subscribe<nav_msgs::Odometry>("/odom", 1, OdomCallback);
-
+  ros::Subscriber img_sub = nh.subscribe("camera/rgb/image_color", 1, ImageCallback);
  
 
   

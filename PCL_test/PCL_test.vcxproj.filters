@@ -18,6 +18,15 @@
     <ClCompile Include="src\point_cloud_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainedEncoder.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gnuplot_i.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\collisionDetect.h">
@@ -30,6 +39,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PairAlignReg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrainedEncoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plotting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gnuplot_i.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

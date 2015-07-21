@@ -11,13 +11,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="gnuplot_i.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="src\point_cloud_test.cpp" />
+    <ClCompile Include="TrainedEncoder.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="gnuplot_i.hpp" />
     <ClInclude Include="PairAlignReg.h" />
     <ClInclude Include="PCTranslate.h" />
+    <ClInclude Include="Plotting.h" />
     <ClInclude Include="src\collisionDetect.h" />
     <ClInclude Include="src\move_control.h" />
+    <ClInclude Include="TrainedEncoder.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F2BA827E-7BA1-415C-9921-04D25321DA6C}</ProjectGuid>
