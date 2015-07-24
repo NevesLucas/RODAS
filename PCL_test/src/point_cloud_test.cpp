@@ -54,7 +54,7 @@ bool seenChair = false;
 ofstream myfile;
 int lastSeen = 0;
 
-//----------------------------------------------------------
+//---------------------------------------------------------- TODO, reduce global variables, seperate threads
 
 
 ros::Publisher cmd_vel_pub_;
@@ -77,7 +77,7 @@ static pcl::visualization::CloudViewer viewer ("Simple Cloud Viewer");
 collisionDetect avoidance;
 
 /// need this //// void callback(const PointCloud::ConstPtr & msg)
-void callback (const PointCloud::ConstPtr & msg)
+void callback (const PointCloud::ConstPtr & msg) //shrink callback and add helper functions
 {
   pcl::PointCloud<pcl::PointXYZ>::Ptr input(new pcl::PointCloud<pcl::PointXYZ>);
 
@@ -211,8 +211,6 @@ void ImageCallback(const sensor_msgs::ImageConstPtr& msg)
 int main(int argc, char **argv) 
 {
 
-
- cout<<"This is correct!!!"<<endl;
   ros::init(argc, argv, "point_cloud_test");
   ros::NodeHandle nh;
   
