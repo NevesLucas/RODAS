@@ -22,7 +22,7 @@
     <ClInclude Include="Plotting.h" />
     <ClInclude Include="src\collisionDetect.h" />
     <ClInclude Include="src\move_control.h" />
-    <ClInclude Include="SychronizedQueue.h" />
+    <ClInclude Include="SynchronisedQueue.h" />
     <ClInclude Include="TrainedEncoder.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -47,7 +47,7 @@
     <ClInclude Include="gnuplot_i.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="SychronizedQueue.h">
+    <ClInclude Include="SynchronisedQueue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

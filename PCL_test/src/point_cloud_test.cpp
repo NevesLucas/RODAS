@@ -29,6 +29,8 @@ Rev 4.0
 #include <nav_msgs/Odometry.h>
 #include <pcl/filters/approximate_voxel_grid.h>
 
+#include "SynchronisedQueue.h"
+
 #include "collisionDetect.h"
 #include "PCTranslate.h"
 #include "PairAlignReg.h"
@@ -86,6 +88,8 @@ static pcl::visualization::CloudViewer viewer("Simple Cloud Viewer"); //this set
 //static pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGB);
 
 collisionDetect avoidance; //initialize avoidance class
+
+SynchronisedQueue<string> queue;
 
 PointCloud::Ptr PCmap; //deprecated, will be removed
 
