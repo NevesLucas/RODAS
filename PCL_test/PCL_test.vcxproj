@@ -13,17 +13,16 @@
   <ItemGroup>
     <ClCompile Include="gnuplot_i.cpp" />
     <ClCompile Include="src\point_cloud_test.cpp" />
-    <ClCompile Include="TrainedEncoder.cpp" />
+    <ClCompile Include="src\TrainedEncoder.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gnuplot_i.hpp" />
-    <ClInclude Include="PairAlignReg.h" />
-    <ClInclude Include="PCTranslate.h" />
-    <ClInclude Include="Plotting.h" />
     <ClInclude Include="src\collisionDetect.h" />
     <ClInclude Include="src\move_control.h" />
-    <ClInclude Include="SynchronisedQueue.h" />
-    <ClInclude Include="TrainedEncoder.h" />
+    <ClInclude Include="src\PairAlignReg.h" />
+    <ClInclude Include="src\PCTranslate.h" />
+    <ClInclude Include="src\SynchronisedQueue.h" />
+    <ClInclude Include="src\TrainedEncoder.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F2BA827E-7BA1-415C-9921-04D25321DA6C}</ProjectGuid>

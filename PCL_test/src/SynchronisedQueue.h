@@ -15,7 +15,7 @@ private:
 public:
 
 	// Add data to the queue and notify others
-	void Enqueue(const T& data)
+	void Enqueue(T& data)
 	{
 		// Acquire lock on the queue
 		boost::unique_lock<boost::mutex> lock(m_mutex);

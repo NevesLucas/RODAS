@@ -18,10 +18,10 @@
     <ClCompile Include="src\point_cloud_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TrainedEncoder.cpp">
+    <ClCompile Include="gnuplot_i.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gnuplot_i.cpp">
+    <ClCompile Include="src\TrainedEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,22 +32,19 @@
     <ClInclude Include="src\move_control.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PCTranslate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PairAlignReg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TrainedEncoder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Plotting.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="gnuplot_i.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="SynchronisedQueue.h">
+    <ClInclude Include="src\SynchronisedQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TrainedEncoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PCTranslate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PairAlignReg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

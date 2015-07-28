@@ -32,11 +32,12 @@ Rev 4.0
 #include "SynchronisedQueue.h"
 
 #include "collisionDetect.h"
+
 #include "PCTranslate.h"
 #include "PairAlignReg.h"
 
 #include "TrainedEncoder.h"
-#include "Plotting.h"
+
 
 using namespace std;
 using namespace cv;
@@ -89,19 +90,21 @@ static pcl::visualization::CloudViewer viewer("Simple Cloud Viewer"); //this set
 
 collisionDetect avoidance; //initialize avoidance class
 
-SynchronisedQueue<string> queue;
+SynchronisedQueue<PointCloud::Ptr>ThreadQueue;
 
 PointCloud::Ptr PCmap; //deprecated, will be removed
 
 /// need this //// void callback(const PointCloud::ConstPtr & msg)
 void callback(const PointCloud::ConstPtr & msg)
-{
+{    /*
 	pcl::PointCloud<pcl::PointXYZRGB>::Ptr input(new pcl::PointCloud<pcl::PointXYZRGB>);
 
 	pcl::copyPointCloud(*msg, *input);
-
+	*/
+	ThreadQueue.Enqueue(msg);
+	/*
 	avoidance.run(input, cmd_vel_pub_);
-
+	
 	pcl::PointCloud<pcl::PointXYZRGB>::Ptr reoriented(new pcl::PointCloud<pcl::PointXYZRGB>);
 
 	translate(currPos[1], currPos[2], currPos[0], -currOri[0], input, reoriented);
@@ -136,6 +139,7 @@ void callback(const PointCloud::ConstPtr & msg)
 		//wait for next cloud
 		targetmsg = true;
 	}
+	*/
 }
 
 
