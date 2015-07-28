@@ -42,10 +42,14 @@ using namespace cv;
 typedef pcl::PointCloud<pcl::PointXYZRGB> PointCloud;
 
 ////////////////////////CAFFE SETUP////////////////////////////////////////////
+// set up some file paths
 string direc = "/home/neuromorphicslab/catkin_ws/src/point_cloud_test/include/Trained_Networks/";
 string netFile = direc + "caffenet_train_iter_3500.caffemodel";
 string protoTxt = direc + "train_val.prototxt";
 const char* labelFile = "/home/neuromorphicslab/catkin_ws/src/point_cloud_test/include/Trained_Networks/emily_labels.txt";
+
+//some storage and label variables
+
 vector<float> featureResponses;
 int topLabelID = 0;
 string topLabelName = "junk";
