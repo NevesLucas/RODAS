@@ -45,7 +45,7 @@ vector<float> featureResponses;
 int topLabelID = 0;
 string topLabelName="junk";
 //network create
-TrainedEncoder tnet(netFile,protoTxt,labelFile);
+TrainedEncoder tNet(netFile,protoTxt,labelFile);
 vector<pair<float, int> > topK; //topK responses and indices
 
 ////further setup
@@ -59,14 +59,14 @@ int lastSeen = 0;
 //----------------------------------------------------------
 
 
-ros::Publisher cmd_vel_pub_;
+ros::Publisher cmd_vel_pub_; //movement publisher
 
 static bool stop =false;
 //////////////
 using namespace std;
 using namespace cv;
 int stepNum = 5;
-float currHead = 0;
+float currHead = 0; 
 float currPos[3], currOri[2];
 static bool targetmsg =false;
 
@@ -83,12 +83,15 @@ PointCloud::Ptr PCmap;
 /// need this //// void callback(const PointCloud::ConstPtr & msg)
 void callback (const PointCloud::ConstPtr & msg)
 {
+///////////////////////////////////////////Avoid Collision Using Point Clouds//////////////////////////////////////////////
   pcl::PointCloud<pcl::PointXYZRGB>::Ptr input(new pcl::PointCloud<pcl::PointXYZRGB>);
 
   pcl::copyPointCloud(*msg,*input);
 
   avoidance.run(input, cmd_vel_pub_);
+  //---------------------------------------------------------------------------------------------------------------------
 
+/////////////////////////////////////////Attempted Mapping/////////////////////////////////////////////
 	pcl::PointCloud<pcl::PointXYZRGB>::Ptr reoriented(new pcl::PointCloud<pcl::PointXYZRGB>);
 
   	translate(currPos[1], currPos[2], currPos[0], -currOri[0], input,reoriented);
@@ -138,6 +141,7 @@ void callback (const PointCloud::ConstPtr & msg)
 
 	currHead = 2*asin(currOri[0]/sqrt(currOri[0]*currOri[0]+currOri[1]*currOri[1])); //speed
 }
+//-----------------------------------------------------------------------------------------
 
 //////////////////////////////////Caffe Cont///////////////////////////////////////////
 void ImageCallback(const sensor_msgs::ImageConstPtr& msg)
@@ -156,52 +160,23 @@ void ImageCallback(const sensor_msgs::ImageConstPtr& msg)
 		string class1 ("cone");
 		string class2 ("chair");
 
-		if(topLabelNAme.compare(class0) == 0)
+		if(topLabelName.compare(class0) == 0 && lastSeen != 0)
 		{
-			if(stoppedSpin == true)
-			{
-				seenBall = false;
-			    seenCone = false;
-			    seenChair = false;
-			}
-			else if(lastSeen != 0)
-			{
 				seenBall = true;
 				lastSeen = 0;
-			}
 		}
 
-		if(topLabelName.compare(class1) == 0)
+		if(topLabelName.compare(class1) == 0 && lastSeen != 1)
 		{
-			if(stoppedSpin == true)
-			{
-				seenBall = false;
-				seenCone = false;
-				seenChair = false;
-			}
-			else if (lastSeen != 1)
-			{
 				seenCone = true;
 				lastSeen = 1;
-			}
 		}
 
-		if(topLabelName.compare(class2) == 0)
+		if(topLabelName.compare(class2) == 0 && lastSeen != 2)
 		{
-			if(stoppedSpin == true)
-			{
-				seenBall = false;
-				seenCone = false;
-				seenChair = false;
-			}
-			else if (lastSeen != 2)
-			{
 				seenChair = true;
 				lastSeen = 2;
-			}
 		}
-
-		///TODO: figure out the stoppedSpin stuff -------------------------------
 	}
 	catch(cv_bridge::Exception& e)
 	{
